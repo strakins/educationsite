@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero {
+    background-image: url(../assets/kids-1093758_1280.jpg);
+    box-shadow: inset 0 0 0 2000px rgba(31, 32, 32, 0.289);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+}
+nav h3 {
+    font-size: 2rem;
+}
+.nav-pages ul {
+    display: flex;
+    gap: 2rem;
+}
+.nav-pages ul li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.enroll {
+    padding: 14px 22px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.enroll:hover {
+   
+    background-color: rgb(39, 198, 39);
+}
+.hero-content {
+    display: flex;
+}
+.hero-content article{
+    width: 50%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.hero-content-text {
+    height: 600px;
+    align-content: center;
+    color: white;
+ 
+}
+.hero-content-text h1{
+    font-size: 3rem;
+}
+.hero-content-text p {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.hero-playicon {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    margin-left: 5rem;
+}
+.what-offer {
+    height: 800px;
+    background-color: white;
+}
+.offer-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    
+}
+.offer-card {
+    margin-top: -2.5rem;
+    background-color: green;
+    height: 300px;
+    color: white;
+    padding: 2rem;
+    align-content: center;
+}
+.second-card {
+    background: orangered;
+}
+.offer-card p {
+    background: inherit;
+    font-weight: lighter;
+    font-size: 18px;
+}
+.offer-card h4{
+    font-size: 1.9rem;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card-icon{
+    height: 40px;
+    width: 70px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 400px) {
+    .hero {
+        height: 300px;
+        padding: 1rem;
+    }
+    nav {
+       
+        display: none;
+    }
+    .enroll {
+        padding: 6px 12px;
+        border-radius: 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 10px;
+       
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-content article{
+        width: 100%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .hero-content-text {
+        height: 400px;
+        align-content: center;
+        color: white;
+     
+    }
+    .hero-content-text h1{
+        font-size: 1rem;
+    }
+    .hero-content-text p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .offer-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        justify-content: space-between;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        
+    }
+    .offer-card {
+        margin-top: 1rem;
+        background-color: green;
+        height: 300px;
+        color: white;
+        padding: 2rem;
+        align-content: center;
+        /* margin-bottom: 1.2rem; */
+    }
+}
